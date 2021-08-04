@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex .form-control{
+    height: 45px;
+    width: 900px;
+    background-color: #F1F1F1;
+    border: none;
+}
+
+div .container-fluid{
+    margin:0;
+    align-items: center;
+}
+.navbar-brand {
+    font-weight: bold;
+    padding-top: 1.45rem;
+    padding-bottom: .3125rem;
+    /*margin-right: 3rem;*/
+    font-size: 1rem;
+    text-decoration: none;
+    /*white-space: nowrap;*/
+    align-items: center;
+}
+
+.navbar-brand .Inicio{
+    background-color: black;
+}
+
+.container-feed{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 2% 0px 2%;
+}
+
+.container-column{
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
+.container-insideOne, .container-insideTwo, .container-insideThree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-insideOne .container-imagCapt img{
+    height: 270px;
+    width: 245px;
+    border-radius: 20px;
+}
+
+.container-insideTwo .container-imagCapt img{
+    height: 200px;
+    width: 245px;
+    border-radius: 20px;
+}
+
+.container-insideThree .container-imagCapt img{
+    height: 370px;
+    width: 245px;
+    border-radius: 20px;
+}
+
+.feed-caption{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .firstColumn, .secondColumn, .thirdColumn, .fourthColumn, .fifthColumn{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .firstColumn, .secondColumn, .thirdColumn, .fourthColumn, .fifthColumn{
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .firstColumn, .secondColumn, .thirdColumn, .fourthColumn, .fifthColumn{
+        width: 50%;
+    }
+    .container-insideOne .container-imagCapt img{
+        height: 310px;
+        width: 295px;
+    }
+    
+    .container-insideTwo .container-imagCapt img{
+        height: 250px;
+        width: 295px;
+    }
+    
+    .container-insideThree .container-imagCapt img{
+        height: 410px;
+        width: 295px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .firstColumn, .secondColumn, .thirdColumn, .fourthColumn, .fifthColumn{
+        width: 100%;
+    }
+
+    .container-insideOne .container-imagCapt img{
+        height: 470px;
+        width: 445px;
+    }
+
+    .container-insideTwo .container-imagCapt img{
+        height: 400px;
+        width: 445px;
+    }
+
+    .container-insideThree .container-imagCapt img{
+        height: 670px;
+        width: 445px;
+    }
+
+}
