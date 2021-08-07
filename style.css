@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+.navbar{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
 .d-flex .form-control{
     height: 45px;
     width: 900px;
@@ -33,7 +40,7 @@ div .container-fluid{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0px 2% 0px 2%;
+    margin: 80px 2% 0 2%;
 }
 
 .container-column{
@@ -71,10 +78,31 @@ div .container-fluid{
     font-weight: bold;
 }
 
+.container-imagCapt{
+    border-radius: 20px;
+}
+
+.feed-img:hover{
+    box-shadow: 0 25px 45px rgba(0,0,0,0.19), 0 17px 17px rgba(0,0,0,0.23);
+    opacity: .9;
+    transform:scale(1.2);
+        -ms-transform:scale(1.2); 
+        -moz-transform:scale(1.2);  
+        -webkit-transform:scale(1.2); 
+        -o-transform:scale(1.2);  
+        -webkit-transition: all 500ms ease-in-out; 
+        -moz-transition: all 500ms ease-in-out;   
+}
 
 @media screen and (max-width: 1250px) {
     .firstColumn, .secondColumn, .thirdColumn, .fourthColumn, .fifthColumn{
         width: 25%;
+    }
+    .d-flex .form-control{
+        height: 45px;
+        width: 500px;
+        background-color: #F1F1F1;
+        border: none;
     }
 }
 
@@ -103,6 +131,12 @@ div .container-fluid{
         width: 295px;
     }
     
+    .d-flex .form-control{
+        height: 45px;
+        width: 250px;
+        background-color: #F1F1F1;
+        border: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -123,6 +157,14 @@ div .container-fluid{
     .container-insideThree .container-imagCapt img{
         height: 670px;
         width: 445px;
+    }
+
+    .d-flex .form-control{
+        height: 45px;
+        width: 0;
+        background-color: #F1F1F1;
+        border: none;
+        opacity: 0;
     }
 
 }
